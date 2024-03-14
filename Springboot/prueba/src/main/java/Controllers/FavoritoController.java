@@ -2,6 +2,7 @@ package Controllers;
 
 import Services.FavoritoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,15 +12,15 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("API/favoritos")
 public class FavoritoController {
 
     private final FavoritoService favoritoService;
 
     @Autowired
     public FavoritoController(FavoritoService favoritoService) {
-        this.favoritoService = favoritoService;    }
-
+        this.favoritoService = favoritoService;
+    }
 
     //Obtener todos los favoritos
     @GetMapping("/listar")

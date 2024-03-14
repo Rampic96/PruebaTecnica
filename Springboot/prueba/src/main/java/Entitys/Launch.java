@@ -6,9 +6,14 @@ import jakarta.persistence.Id;
 @Entity
 public class Launch {
 
+    // Se crea la clase Launch
+
     @Id
     private String launchId;
     private String provider;
+
+    public Launch() {
+    }
 
     public String getLaunchId(){
         return this.launchId;

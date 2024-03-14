@@ -11,6 +11,8 @@ import java.util.List;
 @Entity
 public class Favorito {
 
+    // Se crea la clase Favorito
+
     @Id
     private Long id;
     private String title;
