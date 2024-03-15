@@ -1,0 +1,14 @@
+<div *ngFor="let noticia of noticias">
+    <div class="col-lg-12">
+        <mat-card class="cardWithShadow">
+          <mat-card-content class="p-24">
+            <div class="d-flex w-100">
+              <mat-card-title>{{noticia.title}}</mat-card-title>
+              <div class="m-l-auto">
+                {{noticia.summary}}
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+    </div>
+</div>
